@@ -2,12 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { PagesComponent } from './pages.component';
+import { CvOnlineComponent } from './cv-online/cv-online.component';
+import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    PagesComponent,
+    CvOnlineComponent
   ],
   exports: [
     HomeComponent
@@ -15,6 +21,8 @@ import { PagesRoutingModule } from './pages-routing.module';
   imports: [
     CommonModule,
     PagesRoutingModule,
+    SharedModule,
+    RouterModule,
   ]
 })
 export class PagesModule { }

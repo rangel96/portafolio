@@ -1,0 +1,19 @@
+
+
+/* Navbar Table */
+@media (min-width: 768px) {
+
+  .navbar-toggler {
+    display: none;
+  }
+
+}
+
+/* Navbar Mobile */
+@media (max-width: 767px) {
+
+  .desktop {
+    display: none;
+  }
+
+}

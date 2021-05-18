@@ -1,0 +1,273 @@
+<div class="d-flex" [class.toggled]="toggled" id="wrapper">
+
+  <!-- Sidebar-->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+
+    <!-- Imagen de Perfil -->
+    <img class="mobile" src="./assets/img/foto_perfil.png" alt="Imagen de perfil">
+
+    <!-- Datos Personales -->
+    <div class="sidebar-heading">DATOS PERSONALES</div>
+    <div class="list-group">
+
+      <!-- Nombre -->
+      <div class="row">
+
+        <div class="col-1">
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div class="col">
+          <a>Nombre</a>
+          <p>Eric Rangel</p>
+        </div>
+
+      </div>
+
+      <!-- Grado académico -->
+      <div class="row">
+
+        <div class="col-1">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+
+        <div class="col">
+          <a>Grado académico</a>
+          <p>Ingeniería en Informática</p>
+        </div>
+
+      </div>
+
+      <!-- Estado Civil -->
+      <div class="row">
+
+        <div class="col-1">
+          <i class="fas fa-user-friends"></i>
+        </div>
+
+        <div class="col">
+          <a>Estado civil</a>
+          <p>Soltero</p>
+        </div>
+
+      </div>
+
+      <!-- Domicilio -->
+      <div class="row">
+        <div class="col-1">
+          <i class="fas fa-home"></i>
+        </div>
+
+        <div class="col">
+          <a>Domicilio</a>
+          <p>San Francisco del Rincón, Gto., México.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Medios de Contacto -->
+    <div class="sidebar-heading">CONTÁCTAME</div>
+    <div class="list-group">
+      <div class="col">
+
+        <div class="row">
+          <i class="fas fa-envelope"></i>
+          <p>erangel.carmona@gmail.com</p>
+        </div>
+
+        <div class="row">
+          <i class="fas fa-phone-alt"></i>
+          <p>476 125 62 59</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="sidebar-heading">REDES SOCIALES</div>
+    <div class="row list-group">
+      <div class="col text-center">
+
+        <a href="https://github.com/rangel96">
+          <i class="social fab fa-3x fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ericran90/">
+          <i class="social fab fa-3x fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/EricRan90">
+          <i class="social fab fa-3x fa-twitter-square"></i>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Competencias y Conocimientos -->
+    <div class="sidebar-heading">COMPETENCIAS Y CONOCIMIENTOS</div>
+    <ul class="">
+      <li>Angular</li>
+      <li>NodeJS</li>
+      <li>JavaScrip</li>
+      <li>Bases de Datos</li>
+      <li>Metodología ágil (Scrum)</li>
+    </ul>
+
+    <!-- Aptitudes -->
+    <div class="sidebar-heading">APTITUDES</div>
+    <ul class="">
+      <li>Confiable</li>
+      <li>Liderazgo</li>
+      <li>Dedicación</li>
+      <li>Trabajo en equipo</li>
+      <li>Responsable</li>
+      <li>Empático</li>
+      <li>Autodidacta y proactivo</li>
+    </ul>
+
+    <div class="sidebar-heading">Curriculum</div>
+    <button class="btn btn-success">
+      <i class="fas fa-download"></i>&nbsp;Descargar PDF
+    </button>
+
+  </div>
+
+  <!-- Page Content-->
+  <div id="page-content-wrapper">
+
+    <!-- Navbar Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <button (click)="toggled = !toggled" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <img (click)="toggled = !toggled" class="position-absolute top-0 end-0" src="./assets/img/foto_perfil.png" alt="Imagen de perfil">
+    </nav>
+
+    <!-- Content -->
+    <div class="container-fluid">
+
+      <h1 class="mt-4 text-center">Eric Alberto Rangel Carmona</h1>
+      <h2 class="mb-4 text-center">Estudiante de Ingeniería en Informática</h2>
+
+      <!-- Acerca de mi -->
+      <p>
+        Soy estudiante de ingeniería en informática con especialidad en programación, principalmente enfocado en el
+        Desarrollo de Páginas Web, mis
+        <a href="#projects">proyectos</a>
+        están  desplegados en Angular, me gusta trabajar en equipo ya que pienso que los grandes logros
+        se alcanzan fácilmente con un espíritu de grupo, puedes revisar mi manera de trabajar en
+        <a href="https://github.com/rangel96">GitHub</a>.
+      </p>
+      <hr>
+
+      <!-- Estudios Academicos -->
+      <h3 class="text-uppercase"><i class="fas fa-graduation-cap"></i> Estudios</h3>
+      <div>
+
+        <table class="table table-borderless">
+          <tbody>
+          <tr>
+            <td class="fw-bold">Institución</td>
+            <td>Instituto Tecnológico Superior de Purísima del Rincón</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Periodo</td>
+            <td>Agosto 2017 - actual (8vo Semestre)</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Título o certificado obtenido</td>
+            <td>Ingeniería en Informática (Por obtener)</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <!--<h4>Institución</h4>
+        <p>Instituto Tecnológico Superior de Purísima del Rincón</p>
+
+        <h4>Periodo</h4>
+        <p>Agosto 2017 - actual (8vo Semestre)</p>
+
+        <h4>Título o certificado obtenido</h4>
+        <p>Ingeniería en Informática (Por obtener)</p>-->
+
+        <h4>Logros</h4>
+        <p>
+          Jefe de grupo, pertenecer al selectivo de básquet, seleccionado para la especialidad en el desarrollo de
+          aplicaciones móviles, hacer círculos de estudio, participar en Hackaton ed. 2020, concursos de programación,
+          liderar equipo de trabajo para la creación y desarrollo de una bolsa de trabajo en aplicación web.
+        </p>
+
+      </div>
+      <hr>
+
+      <!-- Proyectos -->
+      <h3 id="projects" class="text-uppercase"><i class="fa fa-folder-open"></i> Proyectos</h3>
+      <p>Proyectos propios o con cursos tomados extra de la escuela</p>
+      <div class="row">
+        <div class="col">
+          <h3 class="text-uppercase">Proyectos</h3>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Seminarios, Certificados y otros Cursos -->
+      <h3 class="text-uppercase"><i class="fas fa-link"></i> Seminarios, Certificados y otros Cursos</h3>
+      <div class="table-responsive text-center">
+        <table class="table align-middle">
+          <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Institución</th>
+            <th scope="col">Mes, Año</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Octavo Congreso Internacional de Calidad</td>
+            <td>UTL-ASQ (Asociación Americana de Calidad)</td>
+            <td>Octubre, 2014</td>
+          </tr>
+          <tr>
+            <td>Curso de Excelencia en el Servicio</td>
+            <td>Grupo Flecha Amarilla</td>
+            <td>Febrero, 2017</td>
+          </tr>
+          <tr>
+            <td>Seminario de Excelencia en el Servicio</td>
+            <td>Grupo Flecha Amarilla</td>
+            <td>Marzo, 2017</td>
+          </tr>
+          <tr>
+            <td>Git + GitHub: Todo un Sistema de Control de Versiones</td>
+            <td>Udemy</td>
+            <td>Marzo, 2021</td>
+          </tr>
+          <!--<tr>
+            <td colspan="2">Larry  Bird</td>
+            <td>@</td>
+          </tr>-->
+          </tbody>
+        </table>
+      </div>
+      <hr>
+
+      <!-- Experiencia Laboral -->
+      <h3 class="text-uppercase"><i class="fa fa-briefcase"></i> Experiencia Laboral</h3>
+      <ul>
+        <li>Atención al cliente, 5años</li>
+        <li>Docente, 4 meses</li>
+        <li>Gestión y evaluación en la calidad en atención al cliente, 1año</li>
+      </ul>
+
+      <!--<p>
+        Make sure to keep all page content within the
+        <code>#page-content-wrapper</code>
+        . The top navbar is optional, and just for demonstration. Just create an element with the
+        <code>#menu-toggle</code>
+        ID which will toggle the menu when clicked.
+      </p>-->
+
+
+
+    </div>
+  </div>
+
+</div>

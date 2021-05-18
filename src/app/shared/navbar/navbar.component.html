@@ -1,0 +1,48 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <div class="container-fluid">
+
+    <button (click)="toggled = !toggled" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="desktop">
+      <a href="#">Inicio</a>
+      <a href="#">Acerca</a>
+      <a href="#">Habilidades</a>
+      <a href="#">Proyectos</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+      <ul class="navbar-nav me-auto mb-2 mt-auto mb-lg-0">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" href="#acerca">Acerca</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" aria-current="page" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Currículum Vitae
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" routerLink="/cv/online">Ver</a></li>
+        <li><a class="dropdown-item" href="./assets/">Descargar</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
