@@ -1,0 +1,46 @@
+
+
+
+.text-center {
+  margin: auto 0;
+  padding: 20px 40px;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  max-width: 50%;
+}
+
+figure {
+  position: relative;
+}
+
+figure:before,
+figure:after {
+  content: '';
+  height: 75%;
+  width: 75%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+img {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+  border-radius: 50%;
+}
+
+#mobile {
+  display: none;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+  #inicio {
+    display: none;
+  }
+
+}
