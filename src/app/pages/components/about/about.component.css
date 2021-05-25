@@ -8,6 +8,10 @@ p {
   font-size: 140%;
 }
 
+#cv {
+  font-size: 150%;
+}
+
 @media only screen and (max-width: 767px) {
 
   div {
