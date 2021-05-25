@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InicioComponent } from './inicio/inicio.component';
 import { AboutComponent } from './about/about.component';
-import { ProjetsComponent } from './projets/projets.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 
 import { MatChipsModule } from '@angular/material/chips';
@@ -13,13 +13,13 @@ import { MatChipsModule } from '@angular/material/chips';
   declarations: [
     InicioComponent,
     AboutComponent,
-    ProjetsComponent,
+    ProjectsComponent,
     SkillsComponent
   ],
   exports: [
     InicioComponent,
     AboutComponent,
-    ProjetsComponent,
+    ProjectsComponent,
     SkillsComponent
   ],
   imports: [

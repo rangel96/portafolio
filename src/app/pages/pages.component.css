@@ -1,6 +1,6 @@
 .content {
   /* Aquí el origen de la imagen */
-  background-image: url(src/assets/img/background/pexels-pixabay-grande-248515.jpg);
+  /*background-image: url(src/assets/img/background/pexels-pixabay-grande-248515.jpg);*/
 
   /* Fijar la imagen de fondo este vertical y
     horizontalmente y centrado */
@@ -9,7 +9,7 @@
   /* Esta imagen no debe de repetirse */
   background-repeat: no-repeat;
 
-  /* COn esta regla fijamos la imagen en la pantalla. */
+  /* Con esta regla fijamos la imagen en la pantalla. */
   background-attachment: fixed;
 
   /* La imagen ocupa el 100% y se reescala */

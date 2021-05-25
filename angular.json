@@ -122,6 +122,10 @@
               "devServerTarget": "portafolio2:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

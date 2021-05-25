@@ -1,45 +1,71 @@
+#inicio {
+  /* Aquí el origen de la imagen */
+  background-image: url(src/assets/img/background/pexels-pixabay-grande-248515.jpg);
 
+  /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+  background-position: center center;
 
+  /* Esta imagen no debe de repetirse */
+  background-repeat: no-repeat;
 
-.text-center {
-  margin: auto 0;
-  padding: 20px 40px;
-  backdrop-filter: blur(5px);
-  border-radius: 20px;
-  max-width: 50%;
-}
+  /* Con esta regla fijamos la imagen en la pantalla. */
+  background-attachment: fixed;
 
-figure {
-  position: relative;
-}
+  /* La imagen ocupa el 100% y se reescala */
+  background-size: cover;
 
-figure:before,
-figure:after {
-  content: '';
-  height: 75%;
-  width: 75%;
-  top: 0;
-  left: 0;
-  position: absolute;
+  /* Damos un color de fondo mientras la imagen está cargando  */
+  background-color: #464646;
+
 }
 
 img {
-  width: 50%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: black;
+  width: 80%;
+  height: 95%;
   border-radius: 50%;
 }
 
-#mobile {
-  display: none;
+h1 {
+  font-size: 600%;
+}
+
+p {
+  font-size: 200%;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
-  #inicio {
+  #desktop {
+    display: none;
+  }
+
+  img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+  }
+
+  h1 {
+    margin: 13%;
+    font-size: xx-large;
+  }
+
+  p {
+    font-size: x-large;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    margin-bottom: 10%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  #mobile {
     display: none;
   }
 
