@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class FooterComponent  {
 
   // * ----- VALORES ----- //
-  date: Date = new Date();
+  months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+  month: string = this.months[new Date().getMonth()];
   year: number = new Date().getFullYear();
 
   constructor() { }

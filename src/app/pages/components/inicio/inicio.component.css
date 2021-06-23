@@ -50,6 +50,7 @@ p {
   font-size: 200%;
   backdrop-filter: blur(10px);
   border-radius: 20px;
+  position: relative;
 }
 
 /* Mobile */
@@ -84,6 +85,10 @@ p {
 
   #mobile {
     display: none;
+  }
+
+  #inicio {
+    padding-top: 5%;
   }
 
 }
